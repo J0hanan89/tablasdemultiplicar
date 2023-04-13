@@ -1,0 +1,86 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #FAD0C9;
+  background-image: linear-gradient(120deg, #FAD0C9, #E1D5E7, #BFE1E1);
+  animation: changeColor 10s infinite;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#question {
+  font-size: 48px;
+  text-align: center;
+  color: #6E2C00;
+}
+
+#answer-input {
+  font-size: 36px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#answer-btn {
+  font-size: 24px;
+  color: white;
+  background-color: #6E2C00;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#answer-btn:hover {
+  background-color: #9E4C00;
+}
+
+#next-btn {
+  font-size: 24px;
+  color: white;
+  background-color: #6E2C00;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#next-btn:hover {
+  background-color: #9E4C00;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #FAD0C9;
+  }
+  25% {
+    background-color: #E1D5E7;
+  }
+  50% {
+    background-color: #BFE1E1;
+  }
+  75% {
+    background-color: #FEE5AD;
+  }
+  100% {
+    background-color: #C8E6C9;
+  }
+}
