@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
   background-color: #FAD0C9;
@@ -7,74 +8,67 @@ body {
   place-items: center;
   height: 100vh;
   line-height: 1.5;
+
 }
 
+/* Estilos para el título */
 h1 {
-  font-size: 4vw;
+  font-size: 2.25rem; /* Tamaño de fuente ajustado para móviles y tablets */
   text-align: center;
-  margin-top: 3vw;
+  margin-top: 1.5625rem; /* Espacio entre el título y el contenido ajustado para móviles y tablets */
 }
 
+/* Estilos para el contenido */
 #content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 3vw;
+  margin-top: 1.5625rem; /* Espacio entre el título y el contenido ajustado para móviles y tablets */
 }
 
+/* Estilos para la pregunta */
 #question {
-  font-size: 5vw;
+  font-size: 3rem; /* Tamaño de fuente ajustado para móviles y tablets */
   text-align: center;
   color: #6E2C00;
 }
 
+/* Estilos para la entrada de respuesta */
 #answer-input {
-  font-size: 4vw;
-  padding: 1vw;
-  border-radius: 5px;
+  font-size: 2.25rem; /* Tamaño de fuente ajustado para móviles y tablets */
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
   border: none;
-  margin-top: 2vw;
+  margin-top: 1.25rem; /* Espacio entre la pregunta y la entrada de respuesta ajustado para móviles y tablets */
   text-align: center;
 }
 
+/* Estilos para el botón de respuesta */
 #answer-btn {
-  font-size: 3vw;
+  font-size: 1.5rem; /* Tamaño de fuente ajustado para móviles y tablets */
   color: white;
   background-color: #6E2C00;
-  border-radius: 5px;
-  padding: 1vw 2vw;
+  border-radius: 0.3125rem;
+  padding: 0.625rem 1.25rem;
   border: none;
-  margin-top: 2vw;
+  margin-top: 1.25rem; /* Espacio entre la entrada de respuesta y el botón de respuesta ajustado para móviles y tablets */
   cursor: pointer;
 }
 
-#answer-btn:hover {
-  background-color: #9E4C00;
-}
-
+/* Estilos para el botón de siguiente pregunta */
 #next-btn {
-  font-size: 3vw;
+  font-size: 1.5rem; /* Tamaño de fuente ajustado para móviles y tablets */
   color: white;
   background-color: #6E2C00;
-  border-radius: 5px;
-  padding: 1vw 2vw;
+  border-radius: 0.3125rem;
+  padding: 0.625rem 1.25rem;
   border: none;
-  margin-top: 2vw;
+  margin-top: 1.25rem; /* Espacio entre el botón de respuesta y el botón de siguiente pregunta ajustado para móviles y tablets */
   cursor: pointer;
 }
 
-#next-btn {
-  font-size: 24px;
-  color: white;
-  background-color: #6E2C00;
-  border-radius: 5px;
-  padding: 15px 30px; /* aumentar el padding */
-  border: none;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
+/* Cambio de color de fondo animado */
 @keyframes changeColor {
   0% {
     background-color: #FAD0C9;
@@ -83,12 +77,3 @@ h1 {
     background-color: #E1D5E7;
   }
   50% {
-    background-color: #BFE1E1;
-  }
-  75% {
-    background-color: #FEE5AD;
-  }
-  100% {
-    background-color: #C8E6C9;
-  }
-}
