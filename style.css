@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Comic Sans MS', sans-serif;
   background-color: #FAD0C9;
   background-image: linear-gradient(120deg, #FAD0C9, #E1D5E7, #BFE1E1);
   animation: changeColor 10s infinite;
