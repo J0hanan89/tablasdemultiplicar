@@ -1,86 +1,54 @@
+/* Estilos base para dispositivos móviles y tablets */
+@media only screen and (max-width: 768px) {
 body {
-  font-family: 'Comic Sans MS', sans-serif;
-  background-color: #FAD0C9;
-  background-image: linear-gradient(120deg, #FAD0C9, #E1D5E7, #BFE1E1);
-  animation: changeColor 10s infinite;
-  display: grid;
-  place-items: center;
-  height: 100vh;
+font-size: 16px;
 }
-
 h1 {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 50px;
+font-size: 24px;
 }
-
 #content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
+margin-top: 30px;
 }
-
 #question {
-  font-size: 48px;
-  text-align: center;
-  color: #6E2C00;
+font-size: 36px;
 }
-
 #answer-input {
-  font-size: 36px;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  margin-top: 20px;
-  text-align: center;
+font-size: 24px;
+padding: 8px;
+margin-top: 15px;
 }
-
-#answer-btn {
-  font-size: 24px;
-  color: white;
-  background-color: #6E2C00;
-  border-radius: 5px;
-  padding: 10px 20px;
-  border: none;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-#answer-btn:hover {
-  background-color: #9E4C00;
-}
-
+#answer-btn,
 #next-btn {
-  font-size: 24px;
-  color: white;
-  background-color: #6E2C00;
-  border-radius: 5px;
-  padding: 10px 20px;
-  border: none;
-  margin-top: 20px;
-  cursor: pointer;
+font-size: 20px;
+padding: 8px 16px;
+margin-top: 15px;
+}
 }
 
-#next-btn:hover {
-  background-color: #9E4C00;
+/* Estilos para tablets y pantallas más grandes */
+@media only screen and (min-width: 769px) {
+body {
+font-size: 18px;
 }
-
-@keyframes changeColor {
-  0% {
-    background-color: #FAD0C9;
-  }
-  25% {
-    background-color: #E1D5E7;
-  }
-  50% {
-    background-color: #BFE1E1;
-  }
-  75% {
-    background-color: #FEE5AD;
-  }
-  100% {
-    background-color: #C8E6C9;
-  }
+h1 {
+font-size: 36px;
+margin-top: 80px;
+}
+#content {
+margin-top: 80px;
+}
+#question {
+font-size: 48px;
+}
+#answer-input {
+font-size: 32px;
+padding: 12px;
+margin-top: 30px;
+}
+#answer-btn,
+#next-btn {
+font-size: 24px;
+padding: 12px 24px;
+margin-top: 30px;
+}
 }
