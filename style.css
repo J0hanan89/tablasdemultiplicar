@@ -1,84 +1,42 @@
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  background-image: linear-gradient(120deg, #78c7ff, #b36cff, #f977b1);
+  background-color: #FAD0C9;
+  background-image: linear-gradient(120deg, #FAD0C9, #E1D5E7, #BFE1E1);
   animation: changeColor 10s infinite;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   height: 100vh;
 }
 
 h1 {
-font-size: 2rem; /* Usamos unidades rem en lugar de px para mejor escalabilidad */
-text-align: center;
-margin: 2rem 0;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 #content {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin-top: 2rem;
-max-width: 80%; /* Agregamos un ancho máximo para mejor visualización en dispositivos móviles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 #question {
-font-size: 3rem; /* Aumentamos el tamaño de la fuente */
-text-align: center;
-color: #6E2C00;
-margin-bottom: 1rem;
+  font-size: 48px;
+  text-align: center;
+  color: #6E2C00;
 }
 
 #answer-input {
-font-size: 2rem; /* Ajustamos el tamaño de la fuente /
-padding: 1rem; / Usamos unidades rem en lugar de px para mejor escalabilidad /
-border-radius: 5px;
-border: none;
-margin-top: 1rem;
-text-align: center;
-width: 100%; / El input ocupará el 100% del ancho del contenedor padre /
-max-width: 20rem; / Agregamos un ancho máximo para mejor visualización en dispositivos móviles */
+  font-size: 36px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  text-align: center;
 }
 
-.btn {
-font-size: 1.8rem; /* Ajustamos el tamaño de la fuente /
-color: white;
-background-color: #6E2C00;
-border-radius: 5px;
-padding: 1rem 2rem; / Usamos unidades rem en lugar de px para mejor escalabilidad /
-border: none;
-margin-top: 1rem;
-cursor: pointer;
-transition: background-color 0.3s; / Agregamos una transición suave en el cambio de color */
-}
-
-.btn:hover {
-background-color: #9E4C00;
-}
-
-#answer-btn {
-margin-right: 1rem; /* Agregamos un margen para separar los botones */
-}
-
-@keyframes changeColor {
-0% {
-background-color: #FAD0C9;
-}
-25% {
-background-color: #E1D5E7;
-}
-50% {
-background-color: #BFE1E1;
-}
-75% {
-background-color: #FEE5AD;
-}
-100% {
-background-color: #C8E6C9;
-}
-}
 #answer-btn {
   font-size: 24px;
   color: white;
@@ -88,12 +46,10 @@ background-color: #C8E6C9;
   border: none;
   margin-top: 20px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #answer-btn:hover {
   background-color: #9E4C00;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #next-btn {
@@ -105,10 +61,26 @@ background-color: #C8E6C9;
   border: none;
   margin-top: 20px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #next-btn:hover {
   background-color: #9E4C00;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #FAD0C9;
+  }
+  25% {
+    background-color: #E1D5E7;
+  }
+  50% {
+    background-color: #BFE1E1;
+  }
+  75% {
+    background-color: #FEE5AD;
+  }
+  100% {
+    background-color: #C8E6C9;
+  }
 }
