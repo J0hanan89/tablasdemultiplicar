@@ -1,79 +1,114 @@
-/* Estilos generales */
 body {
-  font-family: 'Comic Sans MS', sans-serif;
-  background-color: #FAD0C9;
-  background-image: linear-gradient(120deg, #FAD0C9, #E1D5E7, #BFE1E1);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-image: linear-gradient(120deg, #78c7ff, #b36cff, #f977b1);
   animation: changeColor 10s infinite;
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  line-height: 1.5;
-
-}
-
-/* Estilos para el título */
-h1 {
-  font-size: 2.25rem; /* Tamaño de fuente ajustado para móviles y tablets */
-  text-align: center;
-  margin-top: 1.5625rem; /* Espacio entre el título y el contenido ajustado para móviles y tablets */
-}
-
-/* Estilos para el contenido */
-#content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin-top: 1.5625rem; /* Espacio entre el título y el contenido ajustado para móviles y tablets */
+  align-items: center;
+  height: 100vh;
 }
 
-/* Estilos para la pregunta */
+h1 {
+font-size: 2rem; /* Usamos unidades rem en lugar de px para mejor escalabilidad */
+text-align: center;
+margin: 2rem 0;
+}
+
+#content {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 2rem;
+max-width: 80%; /* Agregamos un ancho máximo para mejor visualización en dispositivos móviles */
+}
+
 #question {
-  font-size: 3rem; /* Tamaño de fuente ajustado para móviles y tablets */
-  text-align: center;
-  color: #6E2C00;
+font-size: 3rem; /* Aumentamos el tamaño de la fuente */
+text-align: center;
+color: #6E2C00;
+margin-bottom: 1rem;
 }
 
-/* Estilos para la entrada de respuesta */
 #answer-input {
-  font-size: 2.25rem; /* Tamaño de fuente ajustado para móviles y tablets */
-  padding: 0.625rem;
-  border-radius: 0.3125rem;
-  border: none;
-  margin-top: 1.25rem; /* Espacio entre la pregunta y la entrada de respuesta ajustado para móviles y tablets */
-  text-align: center;
+font-size: 2rem; /* Ajustamos el tamaño de la fuente /
+padding: 1rem; / Usamos unidades rem en lugar de px para mejor escalabilidad /
+border-radius: 5px;
+border: none;
+margin-top: 1rem;
+text-align: center;
+width: 100%; / El input ocupará el 100% del ancho del contenedor padre /
+max-width: 20rem; / Agregamos un ancho máximo para mejor visualización en dispositivos móviles */
 }
 
-/* Estilos para el botón de respuesta */
+.btn {
+font-size: 1.8rem; /* Ajustamos el tamaño de la fuente /
+color: white;
+background-color: #6E2C00;
+border-radius: 5px;
+padding: 1rem 2rem; / Usamos unidades rem en lugar de px para mejor escalabilidad /
+border: none;
+margin-top: 1rem;
+cursor: pointer;
+transition: background-color 0.3s; / Agregamos una transición suave en el cambio de color */
+}
+
+.btn:hover {
+background-color: #9E4C00;
+}
+
 #answer-btn {
-  font-size: 1.5rem; /* Tamaño de fuente ajustado para móviles y tablets */
-  color: white;
-  background-color: #6E2C00;
-  border-radius: 0.3125rem;
-  padding: 0.625rem 1.25rem;
-  border: none;
-  margin-top: 1.25rem; /* Espacio entre la entrada de respuesta y el botón de respuesta ajustado para móviles y tablets */
-  cursor: pointer;
+margin-right: 1rem; /* Agregamos un margen para separar los botones */
 }
 
-/* Estilos para el botón de siguiente pregunta */
-#next-btn {
-  font-size: 1.5rem; /* Tamaño de fuente ajustado para móviles y tablets */
-  color: white;
-  background-color: #6E2C00;
-  border-radius: 0.3125rem;
-  padding: 0.625rem 1.25rem;
-  border: none;
-  margin-top: 1.25rem; /* Espacio entre el botón de respuesta y el botón de siguiente pregunta ajustado para móviles y tablets */
-  cursor: pointer;
-}
-
-/* Cambio de color de fondo animado */
 @keyframes changeColor {
-  0% {
-    background-color: #FAD0C9;
-  }
-  25% {
-    background-color: #E1D5E7;
-  }
-  50% {
+0% {
+background-color: #FAD0C9;
+}
+25% {
+background-color: #E1D5E7;
+}
+50% {
+background-color: #BFE1E1;
+}
+75% {
+background-color: #FEE5AD;
+}
+100% {
+background-color: #C8E6C9;
+}
+}
+#answer-btn {
+  font-size: 24px;
+  color: white;
+  background-color: #6E2C00;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#answer-btn:hover {
+  background-color: #9E4C00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#next-btn {
+  font-size: 24px;
+  color: white;
+  background-color: #6E2C00;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#next-btn:hover {
+  background-color: #9E4C00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
